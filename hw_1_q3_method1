@@ -1,0 +1,19 @@
+# Method_1
+# The idea: Use the second loop to find the longest palindronic substring started from the index i
+# Time complexity is O(n^2),space complexity is O(n)
+# Notes: 1. substring/subarray(子串) need to be continues, while subsuquence(子序列) may or may not to be continues
+max_counter = 0
+result = s[0]
+for i in range(0,len(s)-1):
+    for j in range(i,len(s)-1):
+        #print(i,j)
+        if s[j] <= s[j+1]:
+            j += 1
+            #print("what is the max counter",max_counter)
+            if abs(j-i) > max_counter:
+                max_counter = abs(j-i)
+                result = s[i:j+1]
+        else:
+            counter = 0
+            break
+print(result)
