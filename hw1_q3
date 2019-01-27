@@ -1,4 +1,5 @@
-# Method_1,time complexity is O(n^2),space complexity O(n)
+# Method_1, The idea is to use the second loop to find the longest palindronic substring started from the first loop index i
+# Time complexity is O(n^2),space complexity O(n)
 max_counter = 0
 result = s[0]
 for i in range(0,len(s)-1):
