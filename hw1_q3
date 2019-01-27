@@ -1,6 +1,7 @@
-# Method_1, The idea is to use the second loop to find the longest palindronic substring started from the index i
-# Time complexity is O(n^2),space complexity O(n)
-# notes: 1. substring/subarray(子串) need to be continues, while subsuquence(子序列) may or may not to be continues
+# Method_1
+# The idea: Use the second loop to find the longest palindronic substring started from the index i
+# Time complexity is O(n^2),space complexity is O(n)
+# Notes: 1. substring/subarray(子串) need to be continues, while subsuquence(子序列) may or may not to be continues
 max_counter = 0
 result = s[0]
 for i in range(0,len(s)-1):
