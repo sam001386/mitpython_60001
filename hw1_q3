@@ -1,4 +1,4 @@
-
+# Method_1,time complexity is O(n^2),space complexity O(n)
 max_counter = 0
 result = s[0]
 for i in range(0,len(s)-1):
