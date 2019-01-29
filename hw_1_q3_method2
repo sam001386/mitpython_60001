@@ -1,4 +1,5 @@
-
+# Method_2
+# Time complexity is O(n),space complexity is O(n)
 current_range = ''
 max_range = ''
 if len(s) == 0:
