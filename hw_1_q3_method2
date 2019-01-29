@@ -8,10 +8,11 @@ max_range = ''
 if len(s) == 0:
     max_range = ''
 for i in range(0,len(s)):
-    #print(current_range,i)
     if not current_range:
         current_range += s[i]
         continue
+    # Here current_range[-1] means the last element of current_range
+    # len(current_range) > len(max_range) is not correct, because the current loop will add 1 to the length
     if s[i] >= current_range[-1] and len(current_range) >= len(max_range):
         current_range += s[i]
         max_range = current_range
