@@ -1,4 +1,7 @@
 # Method_2
+# After rethink the Method_1, when we search "abc..." and we know this is or not the longest substring,
+# Do we need to search "bc..." again?, the answer is NO : )
+# The idea: Use one loop to find the longest alphabetical substring started from the index i
 # Time complexity is O(n),space complexity is O(n)
 current_range = ''
 max_range = ''
