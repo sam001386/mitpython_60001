@@ -1,1 +1,22 @@
 
+current_range = ''
+max_range = ''
+if len(s) == 0:
+    max_range = ''
+for i in range(0,len(s)):
+    #print(current_range,i)
+    if not current_range:
+        current_range += s[i]
+        continue
+    if s[i] >= current_range[-1] and len(current_range) >= len(max_range):
+        current_range += s[i]
+        max_range = current_range
+    elif s[i] >= current_range[-1]:
+        current_range += s[i]
+    else:
+        if len(current_range) > len(max_range):
+            max_range = current_range
+            current_range = s[i]
+        else:
+            current_range = s[i]
+print(max_range)
